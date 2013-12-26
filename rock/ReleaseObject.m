@@ -12,14 +12,15 @@
 
 - (void)releaseCopyObject
 {
-    //NSLog(@"===%p [%d]===", _copyObject, _copyObject.retainCount);
-    NSLog(@"===%p [%d]===", self.copyObject, self.copyObject.retainCount);
+    NSLog(@"_copyObject[%p], Count[%d]", _copyObject, _copyObject.retainCount);
+    NSLog(@"self.copyObject[%p], Count[%d]", self.copyObject, self.copyObject.retainCount);
     
     [_copyObject release];
     
-    NSLog(@"===%p [%d]===", self.copyObject, self.copyObject.retainCount);
+    NSLog(@"_copyObject[%p], Count[%d]", _copyObject, _copyObject.retainCount);
+    NSLog(@"self.copyObject[%p], Count[%d]", self.copyObject, self.copyObject.retainCount);
     
-    NSLog(@"%s", __PRETTY_FUNCTION__);
+    //NSLog(@"%s", __PRETTY_FUNCTION__);
     [_copyObject sayHi];
 }
 

@@ -28,7 +28,7 @@
     
     //[releaseObject release];
     
-    //NSLog(@"%p [%d]", copyObject, copyObject.retainCount);
+    NSLog(@"%p [%d]", copyObject, copyObject.retainCount);
     
     [copyObject sayHi];
     
